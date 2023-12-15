@@ -1,0 +1,275 @@
+:root {
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  --green: #7ce534;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* header */
+.dropbtn {
+  background-color: var(--green);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 160px;
+  transition: width .2s ease-in-out;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: white;
+  left: -200px;
+  width: 200px;
+  height: 100vh;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: left .2s ease-in-out;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  left: 0;
+}
+
+.dropdown:hover .dropbtn {
+  width: 200px;
+}
+
+
+
+/* body */
+
+section#one {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#one .image {
+  position: absolute;
+  z-index: -1;
+}
+#one .content {
+  position: absolute;
+  background: white;
+  width: 80%;
+  max-width: 1000px;
+  height: 80vh;
+  left: 0; right: 0;
+  top: 70px;
+  margin: auto;
+  text-align: center;
+}
+.content .decorative_line {
+  position: absolute;
+  width: 65%;
+  height: 25px;
+  background: var(--green);
+  left: 0; right: 0;
+  margin: auto;
+}
+.content .decorative_line:last-child {
+  bottom: 0;
+}
+#one .title {
+  font-size: 3em;
+  max-width: 700px;
+  left: 0; right: 0;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+#one .description {
+  max-width: 700px;
+  left: 0; right: 0;
+  margin: auto;
+}
+
+
+section#two {
+  position: relative;
+  background: rgb(240,240,240);
+  text-align: center;
+  width: 100vw;
+  margin-bottom: 50px;
+}
+#two>.content {
+  position: relative;
+  width: 85%;
+  left: 0; right: 0;
+  margin: auto;
+}
+.content>.title {
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+.circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.circle {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: var(--green);
+  display: flex;
+  flex-direction: column;
+  left: 0; right: 0;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.circle .image {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.circle_background {
+  position: absolute;
+  background: black;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.circle .image img {
+  width: 100px;
+  border-radius: 50%;
+  z-index: 10;
+}
+.circle .description {
+  position: absolute;
+  top: 55%;
+  width: 300px;
+  left: 0; right: 0;
+  margin: auto;
+}
+
+section#three {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+}
+
+#three>.back_green_box {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background: var(--green);
+  top: 200px;
+}
+#three>.title>h2 {
+  font-size: 3em;
+  text-align: center;
+}
+.cards {
+  width: 90%;
+  left: 0; right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.card {
+  position: relative;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  max-width: 350px;
+}
+.card .image {
+  position: relative;
+  width: 60%;
+  height: 300px;
+}
+.card .position {
+  color: var(--green);
+}
+
+footer#main {
+  background: black;
+  color: white;
+  text-align: center;
+  height: 40vh;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+  #one .content .title {
+    font-size: 2em !important;
+    margin-bottom: 50px;
+  }
+  section#two,
+  section#three {
+    height: auto;
+  }
+  #two>.content>.title {
+    font-size: 2em !important;
+  }
+  .circle {
+    width: 320px;
+    height: 320px;
+  }
+  .circle .title>h2 {
+    font-size: 1.7em !important;
+  }
+  .circle .description {
+    top: 53%;
+    padding: 20px;
+  }
+  .card {
+    width: 50%;
+    margin: 5px;
+  }
+  .card .image {
+    height: 200px !important;
+  }
+  .card .description {
+    padding: 10px;
+  }
+  footer#main {
+    height: auto;
+  }
+  
+}
