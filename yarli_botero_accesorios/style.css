@@ -143,7 +143,7 @@ section>article.details {
 }
 
 section#pys {
-  height: 145%;
+  height: 135%;
 }
 
 section#pys .details .product {
@@ -203,7 +203,7 @@ section#pys .details .product:nth-child(even) {
     font-size: .7em;
   }
   section#pys {
-    height: 210%;
+    height: 235%;
   }
   section#pys .details {
     width: 100%;
