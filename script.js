@@ -168,13 +168,13 @@
         title: 'centro electrico automotriz',
         description: 'Tarjeta digital de taller especializado, con los mas profesionales servicios de electricidad automotriz de alta calidad para garantizar el rendimiento óptimo de tu vehículo.'
       },
-      {
+      /*{
         type: 'web',
         project: 'yarli_botero_accesorios',
         img: 'yba.png',
         title: 'yarli botero accesorios',
         description: 'Diseño web exclusivo para joyería. Elegancia digital que realza la belleza artesanal de cada pieza única.'
-      },
+      },*/
       {
         type: 'logo',
         project: '#',
